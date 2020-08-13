@@ -24,13 +24,16 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+" wakatime
+Plugin 'wakatime/vim-wakatime'
+
 " themes
 Plugin 'joshdick/onedark.vim'
 Plugin 'itchyny/lightline.vim'
 
 " IDE like
 Plugin 'scrooloose/nerdtree'
-Plugin 'ycm-core/YouCompleteMe'
+Plugin 'ycm-core/YouCompleteMe', {'do': '.install.py --go-completer --ts-completer'}
 
 " Prettier
 Plugin 'prettier/vim-prettier', {'do': 'yarn install'}
